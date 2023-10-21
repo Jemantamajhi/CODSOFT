@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 247, 199);
+    backdrop-filter: blur(10px);
+}
+
+#image {
+    border-radius: 20%;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    transition: ease 2s;
+}
+
+h1 {
+    text-align: center;
+}
+#image:hover{-webkit-animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+
+
+ @-webkit-keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+.container {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    width: 891px;
+    height: 833px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+#quote {
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        max-width: 90%;
+    }
+}
